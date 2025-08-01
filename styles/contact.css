@@ -1,0 +1,175 @@
+/* ===== Contact Page Styles ===== */
+.contact-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.page-title {
+  text-align: center;
+  color: #1a3a6e;
+  margin-bottom: 2.5rem;
+  font-size: 2.2rem;
+}
+
+/* Two-column Layout */
+.contact-container {
+  display: flex;
+  gap: 0; /* Divider will handle spacing */
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+/* Left Column: Contact Info */
+.contact-info {
+  flex: 1;
+  padding: 2rem;
+  
+}
+
+.info-card {
+  margin-bottom: 1.8rem;
+}
+
+.info-card h3 {
+  color: #1a3a6e;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.info-card h3 .icon {
+  font-size: 1.3rem;
+}
+
+.info-card p {
+  color: #555;
+  line-height: 1.6;
+  margin-left: 1.8rem;
+}
+
+/* Mini Map */
+.mini-map {
+  height: 200px;
+  margin-top: 2rem;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #eee;
+}
+
+.mini-map iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Vertical Divider */
+.divider {
+  width: 1px;
+  background: linear-gradient(
+    to bottom, 
+    transparent, 
+    rgba(0, 0, 0, 0.1), 
+    transparent
+  );
+}
+
+/* Right Column: Contact Form */
+.contact-form {
+  flex: 1;
+  padding: 2rem;
+}
+
+.contact-form h2 {
+  color: #1a3a6e;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  flex: 1;
+  margin-bottom: 1.2rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+.form-group textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.submit-btn {
+  background: #e8b839;
+  color: #1a3a6e;
+  border: none;
+  padding: 0.9rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background: #d4a732;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+  
+  .divider {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(
+      to right, 
+      transparent, 
+      rgba(0, 0, 0, 0.1), 
+      transparent
+    );
+  }
+  
+  .contact-info,
+  .contact-form {
+    padding: 1.5rem;
+  }
+  
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .mini-map {
+    height: 180px;
+  }
+}
